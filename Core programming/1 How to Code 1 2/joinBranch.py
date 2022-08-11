@@ -15,7 +15,7 @@ def joinBranch(act1,act2):
   			joinBranch(act1,act2.leftaccounts),
   			act2.rightaccounts)
   			 
-  		if act2 != False else act1)
+  			if act2 != False else act1)
 
 
 class Test(unittest.TestCase):

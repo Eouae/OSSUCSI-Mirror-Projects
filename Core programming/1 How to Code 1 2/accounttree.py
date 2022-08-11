@@ -1,5 +1,6 @@
 import unittest
 import attribList
+import dunderEqual
 
 class Node:
 	def __init__(self,id,name,bal,l,r):
@@ -8,21 +9,6 @@ class Node:
 		self.balance=bal
 		self.leftaccounts=l
 		self.rightaccounts=r
-	
-	def __eq__(self,othernode):
-		#Attribute list cannot be empty
-		# if ls == []:
-		# 	return (...)
-		# else:
-		if not isinstance(othernode,Node):
-			return False
-		else:
-		return (
-			(...) if ls[0].(...)(...) else 
-			fnForList(ls[1:]))
-		return(
-			self.attrib==other.attrib
-			False)
 			
 #Accounts is one of: 
 # 	- False
@@ -61,17 +47,16 @@ ACT10 = Node (10,"Dr. No", 84, ACT3, ACT42)
 #  					fnForAct(act.rightaccounts)	
 #  		)
 
-
-class Test(unittest.TestCase):
-	#__eq__
+#__eq__
 	def testBase(self):
-		return self.assertEqual(ACT0.__eq__(ACT0),True)
-	def testBase(self):
-		return self.assertEqual(ACT0.__eq__(ACT1),False)
-	def testBase(self):
-		return self.assertEqual(ACT3.__eq__(ACT1),False)
-		
-		
-
-if __name__ == '__main__':
-	unittest.main()
+		return self.assertEqual(ACT0==ACT0,True)
+	def testACT0ACT1(self):
+		return self.assertEqual(ACT0==ACT1,False)
+	def testACT42True(self):
+		return self.assertEqual(ACT42== 
+		Node (42,"Mr. Mom",-79, 
+			Node (27,"Mr. Selatcia",40, 
+				Node(14,"Mr. Impossible",-9,False,False),
+				False),
+			Node (50,"Miss 604",16,False,False))
+			,True)

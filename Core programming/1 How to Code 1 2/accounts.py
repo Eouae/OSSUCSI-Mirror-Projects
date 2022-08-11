@@ -1,7 +1,7 @@
 import unittest
-import accounttree
- import debtorBool
- import joinBranch
+from accounttree import *
+import debtorBool
+import joinBranch
 
 # Abstract "removeActs"
 # (Accounts -> Bool),Accounts -> Accounts
