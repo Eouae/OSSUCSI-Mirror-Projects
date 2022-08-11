@@ -1,0 +1,5 @@
+# need to test for equivalence between two instances of Node
+# Python cannot do so via == automatically, need to change equivalence via __eq__
+# __eq__
+# (self,other) -> true
+# returns
