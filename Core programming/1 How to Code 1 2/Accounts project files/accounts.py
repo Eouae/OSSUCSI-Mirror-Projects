@@ -1,5 +1,5 @@
 import unittest
-from accounttree import *
+from AccountClass import *
 import debtorBool
 import joinBranch
 
@@ -9,7 +9,7 @@ import joinBranch
 
 def removeActs(predStr,act):
 	return(
- 		False if act == False 
+ 		act if act == False 
  		else
  			joinBranch (removeActs(predStr,act.leftaccounts),
  				removeActs(predStr,act.rightaccounts))

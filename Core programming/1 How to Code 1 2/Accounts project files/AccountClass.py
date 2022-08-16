@@ -1,6 +1,5 @@
 import unittest
-import attribList
-import dunderEqual
+from accountsDicts import *
 
 class Node:
 	def __init__(self,id,name,bal,l,r):
@@ -36,6 +35,7 @@ ACT42 = Node (42,"Mr. Mom",-79,
 ACT10 = Node (10,"Dr. No", 84, ACT3, ACT42)
 
 #Template
+
 #  def fnForAct (act):
 #  	return(
 #  		(...)if act == False
@@ -46,17 +46,3 @@ ACT10 = Node (10,"Dr. No", 84, ACT3, ACT42)
 #  					fnForAct(act.leftaccounts),
 #  					fnForAct(act.rightaccounts)	
 #  		)
-
-#__eq__
-	def testBase(self):
-		return self.assertEqual(ACT0==ACT0,True)
-	def testACT0ACT1(self):
-		return self.assertEqual(ACT0==ACT1,False)
-	def testACT42True(self):
-		return self.assertEqual(ACT42== 
-		Node (42,"Mr. Mom",-79, 
-			Node (27,"Mr. Selatcia",40, 
-				Node(14,"Mr. Impossible",-9,False,False),
-				False),
-			Node (50,"Miss 604",16,False,False))
-			,True)
