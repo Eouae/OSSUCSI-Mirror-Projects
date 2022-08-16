@@ -8,7 +8,7 @@ def accountsDicts(act):
  	return(
 		False if act == False
 			else
-		{	"id":act.id,					
+			{"id":act.id,					
   			"name":act.name,
   			"balance":act.balance,
   			"leftaccounts":accountsDicts(act.leftaccounts),
