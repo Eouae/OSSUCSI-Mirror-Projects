@@ -1,7 +1,6 @@
-import unittest
-from AccountClass import *
+# import unittest
+# from AccountClass import *
 
-# "joinbranch"
 # (Accounts,Accounts) -> Accounts
 # Join one account at first empty leftmost node of the second 
 # all id's in act1 < those in act2, thus act1 will join at the leftmost free node of act2
