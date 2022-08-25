@@ -1,6 +1,3 @@
-import unittest
-from accountsDicts import *
-
 class Node:
 	def __init__(self,id,name,bal,l,r):
 		self.id=id
